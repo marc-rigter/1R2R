@@ -1,7 +1,7 @@
 import numpy as np
 import tensorflow as tf
 import pdb
-import rambo.utils.utils as utl
+import _1R2R.utils.utils as utl
 
 class FakeEnv:
     def __init__(self, model, config,

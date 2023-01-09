@@ -13,10 +13,10 @@ import numpy as np
 from tqdm import trange
 from scipy.io import savemat, loadmat
 
-from rambo.models.utils import get_required_argument, TensorStandardScaler
-from rambo.models.fc import FC
+from _1R2R.models.utils import get_required_argument, TensorStandardScaler
+from _1R2R.models.fc import FC
 
-from rambo.utils.logging import Progress, Silent
+from _1R2R.utils.logging import Progress, Silent
 
 np.set_printoptions(precision=5)
 

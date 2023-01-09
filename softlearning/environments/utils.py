@@ -4,7 +4,7 @@ from .adapters.gym_adapter import (
 )
 from .mdp_examples.illustrative_example import IllustrativeExample
 from .hiv_treatment.hiv_treatment import HIVTreatment
-import rambo.env as env_overwrite
+import _1R2R.env as env_overwrite
 import pdb
 
 ENVIRONMENTS = {

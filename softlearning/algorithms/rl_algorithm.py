@@ -9,7 +9,7 @@ import pdb
 import tensorflow as tf
 import numpy as np
 
-from rambo.utils.writer import Writer
+from _1R2R.utils.writer import Writer
 from softlearning.samplers import rollouts
 from softlearning.misc.utils import save_video
 from softlearning.utils.risk import eval_wang_risk

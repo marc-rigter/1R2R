@@ -11,7 +11,7 @@ from softlearning.misc.utils import datetimestamp
 DEFAULT_UNIVERSE = 'gym'
 DEFAULT_DOMAIN = 'HalfCheetah'
 DEFAULT_TASK = 'v2'
-DEFAULT_ALGORITHM = 'RAMBO'
+DEFAULT_ALGORITHM = '1R2R'
 
 
 TASKS_BY_DOMAIN_BY_UNIVERSE = {
