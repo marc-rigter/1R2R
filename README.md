@@ -7,9 +7,10 @@ Code to reproduce our experiments.
 2. Create a conda environment and install 1R2R:
 ```
 cd 1R2R
-conda env create -f environment/environment.yml
+conda create --name 1R2R python=3.7
 conda activate 1R2R
 pip install -e .
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -18,7 +19,6 @@ Configuration files can be found in `examples/config/`. For example, to run the 
 ```
 1R2R run_example examples.development --config examples.config._1R2R.stochastic_mujoco.hopper_high_noise_medium_replay --seed 0 --gpus 1
 ```
-
 
 #### Logging
 

@@ -19,7 +19,6 @@ from softlearning.replay_pools.simple_replay_pool import SimpleReplayPool
 
 from _1R2R.models.constructor import construct_model, format_samples_for_training
 from _1R2R.models.fake_env import FakeEnv
-from _1R2R.utils.visualization import visualize_policy
 from _1R2R.utils.logging import Progress
 from _1R2R.utils.risk import wang_cdf
 import _1R2R.utils.utils as utl
@@ -681,19 +680,6 @@ class _1R2R(RLAlgorithm):
             sum(steps_added), self._model_pool.size, self._model_pool._max_size, mean_rollout_length, self._n_train_repeat
         ))
         return rollout_stats
-
-    def _visualize_model(self, env, timestep):
-        ## save env state
-        state = env.unwrapped.state_vector()
-        qpos_dim = len(env.unwrapped.sim.data.qpos)
-        qpos = state[:qpos_dim]
-        qvel = state[qpos_dim:]
-
-        print('[ Visualization ] Starting | Epoch {} | Log dir: {}\n'.format(self._epoch, self._log_dir))
-        visualize_policy(env, self.fake_env, self._policy, self._writer, timestep)
-        print('[ Visualization ] Done')
-        ## set env state
-        env.unwrapped.set_state(qpos, qvel)
 
     def _training_batch(self, batch_size=None):
         batch_size = batch_size or self.sampler._batch_size

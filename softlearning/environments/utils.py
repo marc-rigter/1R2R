@@ -2,7 +2,6 @@ from .adapters.gym_adapter import (
     GYM_ENVIRONMENTS,
     GymAdapter,
 )
-from .mdp_examples.illustrative_example import IllustrativeExample
 from .hiv_treatment.hiv_treatment import HIVTreatment
 import _1R2R.env as env_overwrite
 import pdb
@@ -38,9 +37,7 @@ def get_environment_from_params(environment_params):
     return get_environment(universe, domain, task, environment_kwargs)
 
 def get_mdp_example(domain):
-    if domain == "IllustrativeExample":
-        env = IllustrativeExample()
-    elif domain == "HIVTreatment":
+    if domain == "HIVTreatment":
         env = HIVTreatment()
     env = GymAdapter(None, None, env=env)
     return env

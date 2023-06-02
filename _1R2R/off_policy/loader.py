@@ -4,7 +4,6 @@ import pickle
 import gzip
 import pdb
 import numpy as np
-from softlearning.environments.mdp_examples.illustrative_example import IllustrativeExample
 
 def restore_pool(
         replay_pool,
