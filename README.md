@@ -1,6 +1,6 @@
-# One Risk to Rule Them All: A Risk-Sensitive Perspective on Model-Based Offline Reinforcement Learning
+# One Risk to Rule Them All: Addressing Distributional Shift in Offline Reinforcement Learning via Risk-Aversion 	
 
-Code to reproduce our experiments.
+Official code to reproduce the experiments in the [1R2R paper](https://arxiv.org/abs/2212.00124).
 
 ## Installation
 1. Install [MuJoCo 2.1.0](https://github.com/deepmind/mujoco/releases) to `~/.mujoco/mujoco210`.
