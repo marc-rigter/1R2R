@@ -20,6 +20,11 @@ Configuration files can be found in `examples/config/`. For example, to run the 
 1R2R run_example examples.development --config examples.config._1R2R.stochastic_mujoco.hopper_high_noise_medium_replay --seed 0 --gpus 1
 ```
 
+If importlib is unable to import the desired config file, this can be resolved by adding to the PYTHONPATH:
+```
+export PYTHONPATH="${PYTHONPATH}:/path/to/1R2R"
+```
+
 #### Logging
 
 By default, TensorBoard logs are generated in the "logs" directory. The code is also set up to log using Weights and Biases (WandB). To enable the use of WandB, set "log_wandb" to True in the configuration file.

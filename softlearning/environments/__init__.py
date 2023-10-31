@@ -35,3 +35,10 @@ gym.envs.register(
      max_episode_steps=1000,
      kwargs={},
 )
+
+gym.envs.register(
+     id='CurrencyExchange-v0',
+     entry_point='softlearning.environments.currency_exchange.currency_exchange:CurrencyExchange',
+     max_episode_steps=50,
+     kwargs={},
+)
