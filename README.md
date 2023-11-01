@@ -31,3 +31,13 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/1R2R"
 #### Logging
 
 By default, TensorBoard logs are generated in the "logs" directory. The code is also set up to log using Weights and Biases (WandB). To enable the use of WandB, set "log_wandb" to True in the configuration file.
+
+## Citing 1R2R
+```
+@article{rigter2023,
+  title={One Risk to Rule Them All: A Risk-Sensitive Perspective on Model-Based Offline Reinforcement Learning},
+  author={Rigter, Marc and Lacerda, Bruno and Hawes, Nick},
+  journal={Advances in Neural Information Processing Systems},
+  year={2023}
+}
+```
