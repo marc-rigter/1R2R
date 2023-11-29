@@ -1,6 +1,7 @@
 # One Risk to Rule Them All: A Risk-Sensitive Perspective on Model-Based Offline Reinforcement Learning	
 
-Official code to reproduce the experiments in the [1R2R paper](https://arxiv.org/abs/2212.00124).
+Official code to reproduce the experiments in the paper ["One Risk to Rule Them All: A Risk-Sensitive Perspective on Model-Based Offline Reinforcement Learning	
+"](https://arxiv.org/abs/2212.00124).
 
 ## Installation
 1. Install [MuJoCo 2.1.0](https://github.com/deepmind/mujoco/releases) to `~/.mujoco/mujoco210`.
@@ -14,7 +15,7 @@ pip install -r requirements.txt
 ```
 
 ## Datasets
-The datasets introduced for stochastic domains can be found on [Google Drive]([https://arxiv.org/abs/2212.00124](https://drive.google.com/drive/folders/1z52N4MHHlqYRljUT1azIRq2s462ZSQOA?usp=sharing).
+The datasets introduced for stochastic domains can be found on the [HuggingFace Hub](https://huggingface.co/datasets/marcrigter/1R2R-datasets) as well as [Google Drive](https://arxiv.org/abs/2212.00124](https://drive.google.com/drive/folders/1z52N4MHHlqYRljUT1azIRq2s462ZSQOA?usp=sharing). By default, the code expects that the datasets are located in the folder 1R2R/datasets.
 
 ## Usage
 Configuration files can be found in `examples/config/`. For example, to run the stochastic  hopper-medium-replay task with high noise, use the following:
